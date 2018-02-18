@@ -1,0 +1,676 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* grids */
+.row:before,
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*='col-'] {
+	float: left;
+ 	margin: 0 auto;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offest-7 {margin-left: 58.33%;}
+.col-offest-8 {margin-left: 66.66%;}
+.col-offest-9 {margin-left: 75%;}
+.col-offest-10 {margin-left: 83.33%;}
+.col-offest-11 {margin-left: 91.66%;}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+nav {
+	background-color: #313234;
+	height: 50px;
+	width: 100%;
+	content: "";
+	display: table;
+	clear: both;
+}
+nav .piture {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+nav .menu ul {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 100px;
+	list-style-type: none;
+}
+nav .menu ul li {
+	display: inline-block;
+}
+nav .menu ul li a {
+	line-height: 55px;
+	color: #fff;
+	padding: 0 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav .menu ul li a:hover {
+	color: #00c7e8;
+}
+.hero {
+	height: 420px;
+	background: url('http://socza.no-ip.org/projects/3.3-RWD/img/laptop-big.jpg');
+	background-size: cover;
+	background-position: 50%;
+}
+.slogan {
+	position: relative;
+	float: right;
+	width: 100%;
+	max-width: 500px;
+	top: 140px;
+	padding-left: 15px;
+	background-color: rgba(67, 67, 67, 0.5);
+}
+.slogan h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0;
+}
+.slogan h1 span {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: 'Fredoka One', cursive;
+}
+.services .item {
+	text-align: center;
+}
+.services h5 {
+	padding: 0 20px;
+}
+.services h3 a {
+	color: #313234;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.services h3:hover a {
+	color: #00c7e8;
+}
+.services h3 a i {
+	background-color: #313234;
+	border-radius: 15%;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+}
+.services h3:hover a i {
+	background-color: #00c7e8;
+}
+.services h5 {
+	color: #acaead;
+}
+.featured-jobs h1 {
+	color: #313234;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.featured-jobs p {
+	color: #acaead;
+	text-align: center;
+	padding: 0 40px;
+	margin: 0;
+}
+.gallery .item {
+	text-align: center;
+}
+.gallery .images {
+	position: relative;
+	display: block;
+	float: left;
+}
+.gallery .images img {
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.gallery .images .layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.5);
+}
+.gallery .images:hover .layer {
+	display: block;
+}
+.gallery .images .layer i {
+	display: block;
+	position: absolute;
+	left: calc(50% - 30px);
+	top: calc(50% - 5px);
+}
+.gallery .images .layer i:last-child {
+	display: block;
+	position: absolute;
+	left: calc(50% + 20px);
+	top: calc(50% - 5px);
+}
+.people {
+	text-align: center;
+}
+.people .item {
+	text-align: center;
+}
+.people .item h3 {
+	text-align: center;
+	color: #313234;
+}
+
+.people .person {
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 170px;
+	height: 170px;
+	margin: auto;
+}
+.people .person img {
+	display: block;
+	width: 100%;
+	height: 170px;
+}
+.people .person .layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.5);
+}
+.people .person:hover .layer {
+	display: block;
+}
+.people .person .layer .desc-layer {
+	position: absolute;
+	left: calc(50% - 35px);
+	top: calc(50% - 30px);
+}
+.people .person .layer .desc-layer-web {
+	position: absolute;
+	left: calc(50% - 60px);
+	top: calc(50% - 30px);
+}
+.people .person .layer .desc-layer-admin {
+	position: absolute;
+	left: calc(50% - 65px);
+	top: calc(50% - 30px);
+}
+.promotion {
+	display: block;
+	background-color: #313234;;
+}
+.promotion .item {
+	text-align: center;
+}
+.promotion img {
+	width: 260px;
+	height: auto;
+	margin-top: 50px;
+	float: right;
+}
+.promotion h1 {
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0 30px;
+	font-size: 28px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+.promotion .description {
+	display: block;
+	float: left;
+	text-align: left;
+	padding: 0 30px;
+	width: 330px;
+	font-size: 13px;
+	color: #acaead;
+}
+.promotion .description-small {
+	display: block;
+	float: left;
+	text-align: left;
+	padding: 0 30px;
+	width: 230px;
+	font-size: 13px;
+	font-style: italic;
+	color: #acaead;
+}
+.stats .item {
+	text-align: center;
+}
+.stats .info {
+	display: inline-block;
+	float: left;
+	color: #313234;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+.stats .info h1 {
+	margin: 0;
+}
+.stats .info span {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #00c7e8;
+}
+.contacts {
+	background-color: #313234;
+}
+.contacts h4 {
+	text-transform: uppercase;
+}
+.contacts p {
+	font-size: 12px;
+	color: #acaead;
+}
+.contacts .about-us {
+	/*width: 380px;*/
+	padding: 0 60px;
+}
+.contacts .get-in-touch  {
+	/*width: 300px;*/
+	padding: 0 25px;
+}
+.contacts .get-in-touch .name p {
+	height: 40px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #eaeceb;
+	margin: 0;
+}
+.contacts .get-in-touch .data p {
+	height: 40px;
+	font-size: 12px;
+	width: 170px;
+	padding: 0 10px;
+	margin: 0;
+}
+.contacts .social-media {
+	width: 230px;
+	/*height: 160px;*/
+	padding: 0 28px;
+}
+.contacts .social-media .awesome {
+	display: inline-block;
+	width: 230px;
+	text-align: left;
+}
+.contacts .social-media .awesome a {
+	color: #fff;
+	background-color: #00c7e8;
+	/*border: 1px solid #00c7e8;*/
+	border-radius: 5px;
+	padding: 3px;
+}
+/*.contacts .social-media .awesome a:hover {
+	background-color: #313234;
+}*/
+.contacts .social-media .awesome a i {
+	padding: 2px;
+}
+.contacts .about-us,
+.contacts .get-in-touch,
+.contacts .social-media {
+	position: relative;
+}
+.contacts h4:after {
+	content: '';
+    display: block;
+    width: 60px;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    left: 160px;
+    top: 33px;
+}
+footer {
+	background-color: #252726;
+	height: 50px;
+	line-height: 50px;
+	color: #acaead;
+	text-align: center;
+}
+section > .container {
+	margin: 50px auto;
+}
+
+/*MEDIA*/
+/*urządzenia duże (desktopy, monitory, tv)*/
+@media (min-width: 1200px) {
+	nav img {
+		padding: 10px 100px;
+	}
+	nav .menu ul {
+		display: inline-block;
+		float: right;
+	}
+	nav .menu ul li {
+		display: inline-block;
+		float: left;
+		text-align: center;
+		padding: 0 13px;
+	}
+/* 	.contacts .field {
+		width: 100%;
+		padding-left: 70px;
+	} */
+}
+
+/*urządzenia średnie*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	nav {
+		text-align: left;
+	}
+	nav img {
+		padding: 10px 100px;
+	}
+	nav .menu ul {
+		float: right;
+		display: inline-block;
+		text-align: center;
+		padding-left: 130px;
+	}
+	nav .menu ul li {
+		display: inline-block;
+		float: left;
+		text-align: center;
+		padding: 0 13px;
+	}
+	
+	.stats .item {
+		display: inline-block;
+		float: left;
+		text-align: center;
+	}
+}
+
+/*urządzenia małe (tablety)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	nav {
+		text-align: left;
+	}
+	nav .picture {
+		display: block;
+		float: none;
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+	}
+	nav .menu {
+		display: block;
+		float: left;
+		text-align: center;
+		width: 100%;
+	}
+	nav .menu ul {
+		display: block;
+		float: left;
+		text-align: center;
+		width: 100%;
+	}
+	nav .menu ul li {
+		display: inline-block;
+		float: none;
+		padding: 0 10px;
+	}
+	.gallery .item {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 600px;
+	}
+	.gallery .item img {
+		width: 300px;
+		height: auto;
+	}
+	.gallery .images:hover .layer {
+		display: none;
+	}
+	.people {
+		display: inline-block;
+		float: none;
+		padding: 0 100px;
+	  text-align: center;
+	}
+	.people .item {
+		display: inline-block;
+		float: none;
+		text-align: center;
+		width: 270px;
+	}
+	.people .person:hover .layer {
+		display: none;
+	}
+	.promotion .item {
+		display: block;
+		float: left;
+		text-align: center;
+	}	
+	.promotion img {
+		padding: 30px;
+		width: 290px;
+		height: auto;
+	}
+	.promotion h1 {
+		padding: 30px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.promotion .description {
+		padding: 30px;
+		width: 290px;
+	}
+	.promotion .description-small {
+		padding: 30px;
+		width: 290px;
+	}
+	.stats {
+		display: inline-block;
+		float: none;
+		padding: 0 100px;
+	  text-align: center;
+	}
+	.stats .item {
+		display: inline-block;
+		float: none;
+		text-align: center;
+		width: 270px;
+	}
+	.contacts h4:after {
+		display: none;
+	}
+	.contacts .item {
+		width: 100%;
+		text-align: center;
+	}
+	.contacts .get-in-touch {
+		display: inline-block;
+		float: left;
+		width: 350px;
+		left: 100px;
+	}
+	.contacts .get-in-touch .name {
+		display: inline-block;
+		text-align: left;
+		float: none;
+		width: 45px;
+	}
+	.contacts .get-in-touch .data {
+		display: inline-block;
+		text-align: left;
+		float: none;
+		width: 150px;
+	}
+	.contacts .social-media {
+		display: inline-block;
+		float: right;
+		width: 250px;
+		right: 120px;
+	}
+	.contacts .social-media .awesome {
+		display: inline-block;
+		width: 200px;
+		text-align: left;
+	}
+}
+
+/*urządzenia bardzo małe (telefony)*/
+@media (max-width: 767px) {
+	nav {
+		text-align: center;
+	}
+	nav .picture {
+		display: block;
+		float: none;
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+	}
+	nav .menu {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	nav .menu ul {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	nav .menu ul li {
+		display: block;
+		float: none;
+		font-size: 120%;
+	}
+	.services .item {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 300px;
+	}
+	.gallery .item {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 300px;
+	}
+	.gallery .images:hover .layer {
+		display: none;
+	}
+	.people .item {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 170px;
+	}
+	.people .person:hover .layer {
+		display: none;
+	}
+	
+	.promotion .item {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 290px;
+	}
+	.promotion img {
+		padding: 25px;
+		width: 290px;
+		height: auto;
+		margin: 0;
+	}
+	.promotion h1 {
+		padding: 25px;
+		width: 290px;
+		margin: 0;
+	}
+	.promotion .description {
+		padding: 25px;
+		width: 290px;
+		height: 150px;
+	}
+	.promotion .description-small {
+		padding: 25px;
+		width: 290px;
+		height: 130px;
+	}
+	.stats .item {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.contacts .item {
+		display: inline-block;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.contacts h4:after {
+		display: none;
+	}
+	.contacts .get-in-touch .name {
+		display: inline-block;
+		text-align: left;
+		float: none;
+		width: 50px;
+		height: auto;
+	}
+	.contacts .get-in-touch .data {
+		display: inline-block;
+		text-align: left;
+		float: none;
+		width: 150px;
+	}
+	.contacts .social-media .awesome {
+		display: inline-block;
+		width: 220px;
+		text-align: center;
+	}
+}
